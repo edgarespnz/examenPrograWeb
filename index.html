@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tres En Raya!</title>
+</head>
+<body>
+    <h1>Tres en Raya</h1>
+    <div class = "row">
+        <!-- Fila 0 -->
+        <div class = "col">
+            <!-- casilla 0 -->
+            <button id="0x0" type="button" onclick="casillaOnClick(0,0)"></button>
+        </div>
+        <div class = "col">
+            <!-- casilla 1 -->
+            <button id="0x1" type="button" onclick="casillaOnClick(0,1)"></button>
+        </div>
+        <div class = "col">
+            <!-- casilla 2 -->
+            <button type="button" id="0x2" onclick="casillaOnClick(0,2)"></button>
+        </div>
+    </div>
+    <div class = "row">
+        <!-- Fila 1 -->
+        <div class = "col">
+            <!-- casilla 0 -->
+            <button type="button" id="1x0" onclick="casillaOnClick(1,0)"></button>
+        </div>
+        <div class = "col">
+            <!-- casilla 1 -->
+            <button type="button" id="1x1" onclick="casillaOnClick(1,1)"></button>
+        </div>
+        <div class = "col">
+            <!-- casilla 2 -->
+            <button type="button" id="1x2" onclick="casillaOnClick(1,2)"></button>
+        </div>
+    </div>
+    <div class = "row">
+        <!-- Fila 2 -->
+        <div class = "col">
+            <!-- casilla 0 -->
+            <button type="button" id="2x0" onclick="casillaOnClick(2,0)"></button>
+        </div>
+        <div class = "col">
+            <!-- casilla 1 -->
+            <button type="button" id="2x1" onclick="casillaOnClick(2,1)"></button>
+        </div>
+        <div class = "col">
+            <!-- casilla 2 -->
+            <button type="button" id="2x2" onclick="casillaOnClick(2,2)"></button>
+        </div>
+    </div>
+    <script src ="tresRayas.js"></script>
+</body>
+</html>
