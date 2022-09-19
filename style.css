@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+}
+button{
+    font-size: 30px;
+    background-color: aqua;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    margin: 20px;
+}
+
+.col{
+    text-align: center;
+}
+
