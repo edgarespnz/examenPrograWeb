@@ -83,7 +83,7 @@ const casillaOnClick = (fila,columna) =>{
     if(fila == 1 && columna == 1){
         fila1.push(valor1)
     }
-    if(fila == 2 && columna == 2){
+    if(fila == 1 && columna == 2){
         fila1.push(valor1)
     }
 
@@ -104,41 +104,63 @@ const casillaOnClick = (fila,columna) =>{
     console.log("fila 3: "+fila2)
 
     setTimeout(recorrerMatriz(),200)
-    
+    setTimeout(mensajeGanador(), 200)
 }
 
 const recorrerMatriz = () =>{
     //fila 0
     if(fila0[0] == fila0[1] && fila0[1]== fila0[2] && fila0.length !=0){
         alert("ganaste")
-        deshabilitarBotones(board)
+        deshabilitarBotones()
     }
 
     //fila1
     if(fila1[0] == fila1[1] && fila1[1]== fila1[2] && fila1.length !=0){
         alert("ganaste")
-        deshabilitarBotones(board)
+        deshabilitarBotones()
     }
 
     //fila2
 
     if(fila2[0] == fila2[1] && fila2[1]== fila2[2] && fila2.length !=0){
         alert("ganaste")
-        deshabilitarBotones(board)
+        deshabilitarBotones()
     }
 
-    
-
-    
+    // comparación en diagonal
 }
 
 const deshabilitarBotones = (board) =>{
-    for(i in board){
-        casilla = i
-        casilla.disabled = true
+    for (i = 0 ; i<3 ;i++){
+        for(j = 0; j<3; j++){
+            let casilla = document.getElementById(i + "x" + j)
+            casilla.disabled = true;
+        }
     }
 }
 
+const mensajeGanador = () =>{
+    if(fila0[2] == "X"){
+        alert("ganó jugador X")
+    }
+    if(fila0[2] == "Y"){
+        alert("ganó jugador Y")
+    }
+
+    if(fila1[2] == "X"){
+        alert("ganó jugador X")
+    }
+    if(fila1[2] == "Y"){
+        alert("ganó jugador Y")
+    }
+
+    if(fila2[2] == "X"){
+        alert("ganó jugador X")
+    }
+    if(fila2[2] == "Y"){
+        alert("ganó jugador Y")
+    }
+}
 
 const main = () =>{
     alert("El Juego empieza, primer jugador marca con X")
